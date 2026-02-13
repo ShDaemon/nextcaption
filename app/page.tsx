@@ -14,6 +14,8 @@ import Demo from "@/app/components/Demo";
 import Feedback from "@/app/components/Feedback";
 import WhatsComing from "@/app/components/WhatsComing";
 import AnimatedBackground from "@/app/components/ui/AnimatedBackground";
+import Endline from "@/app/components/Endline";
+import CautionTape from "@/app/components/ui/CautionTape";
 
 export default function Home() {
     return (
@@ -27,17 +29,23 @@ export default function Home() {
 
                 <main className="pt-2">
                     <div id="hero"><Hero/></div>
+                    <CautionTape/>
                     <div id="features"><Features/></div>
                     <div id="demo"><Demo/></div>
+
                     <div id="feedback"><Feedback/></div>
                     <div id="mission"><Mission/></div>
                     <div id="languages"><LangSupportGrid/></div>
+
                     <div id="stats"><Stats/></div>
                     <div id="whatscoming"><WhatsComing/></div>
+                    <CautionTape/>
+                    <div id="endline"><Endline/></div>
                     <div id="waitlist"><Waitlist/></div>
                 </main>
 
                 <Footer/>
+                <CautionTape/>
             </div>
 
             <ScrollToTop />
